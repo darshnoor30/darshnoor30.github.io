@@ -1,526 +1,695 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Darshnoor Kaur | Cybersecurity &amp; Security Engineering</title>
+    <meta
+      name="description"
+      content="Cybersecurity portfolio of Darshnoor Kaur — practical work in phishing detection, network monitoring, threat intelligence, security analytics, Python, FastAPI, React, and AWS."
+    />
+    <meta name="author" content="Darshnoor Kaur" />
+    <meta name="theme-color" content="#07111f" />
+    <meta name="color-scheme" content="dark" />
 
-  <title>Darshnoor Kaur | Cybersecurity Portfolio</title>
+    <link rel="canonical" href="https://darshnoor30.github.io/" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🛡️</text></svg>"
+    />
 
-  <meta name="description"
-    content="Darshnoor Kaur - Cybersecurity Enthusiast, AWS Cloud Learner, Python Developer, and Computer Engineering Student." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://darshnoor30.github.io/" />
+    <meta
+      property="og:title"
+      content="Darshnoor Kaur | Cybersecurity Portfolio"
+    />
+    <meta
+      property="og:description"
+      content="Security engineering projects spanning phishing detection, network monitoring, threat intelligence, and SOC analytics."
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta
+      name="twitter:title"
+      content="Darshnoor Kaur | Cybersecurity Portfolio"
+    />
+    <meta
+      name="twitter:description"
+      content="Practical cybersecurity projects built with Python, FastAPI, React, Scapy, Streamlit, and AWS fundamentals."
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
-    rel="stylesheet">
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" type="module"></script>
+  </head>
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      scroll-behavior: smooth;
-    }
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
 
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: #050816;
-      color: white;
-      overflow-x: hidden;
-      line-height: 1.7;
-    }
+    <nav class="site-nav" aria-label="Primary navigation">
+      <div class="nav-shell">
+        <a class="brand" href="#top" aria-label="Darshnoor Kaur — back to top">
+          <span class="brand-mark" aria-hidden="true">DK</span>
+          <span class="brand-text">Darshnoor Kaur</span>
+        </a>
 
-    canvas {
-      position: fixed;
-      top: 0;
-      left: 0;
-      z-index: -1;
-    }
+        <button
+          class="nav-toggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          <span class="sr-only">Toggle navigation</span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
 
-    header {
-      min-height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding: 40px 10%;
-    }
+        <div class="nav-links" id="nav-links">
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#skills">Skills</a>
+          <a href="#credentials">Credentials</a>
+          <a class="nav-cta" href="#contact">Contact</a>
+        </div>
+      </div>
+    </nav>
 
-    .hero {
-      max-width: 900px;
-      text-align: center;
-    }
+    <header class="hero" id="top">
+      <canvas id="matrix" aria-hidden="true"></canvas>
+      <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
 
-    .hero h1 {
-      font-size: 4rem;
-      margin-bottom: 15px;
-      color: #00ffcc;
-      text-shadow: 0 0 20px rgba(0, 255, 204, 0.5);
-    }
+      <div class="shell hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow">
+            <span class="status-dot"></span> Open to cybersecurity internships
+          </p>
+          <h1>
+            I build security systems that turn
+            <span>signals into decisions.</span>
+          </h1>
+          <p class="hero-intro">
+            I’m <strong>Darshnoor Kaur</strong>, a Computer Engineering
+            undergraduate focused on phishing detection, SOC monitoring, network
+            security, threat intelligence, and cloud security. I turn security
+            concepts into working, documented tools.
+          </p>
 
-    .typing {
-      color: #00bfff;
-      font-size: 1.4rem;
-      margin-bottom: 25px;
-      font-weight: 500;
-    }
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects"
+              >Explore my projects</a
+            >
+            <a
+              class="button button-secondary"
+              href="Darshnoor_Kaur_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              View résumé
+            </a>
+          </div>
 
-    .intro {
-      color: #d6d6d6;
-      font-size: 1.05rem;
-      max-width: 800px;
-      margin: auto;
-      margin-bottom: 35px;
-    }
+          <div
+            class="hero-links"
+            role="group"
+            aria-label="Professional profiles"
+          >
+            <a
+              href="https://github.com/darshnoor30"
+              target="_blank"
+              rel="noopener noreferrer"
+              >GitHub <span aria-hidden="true">↗</span></a
+            >
+            <a
+              href="https://www.linkedin.com/in/darshnoor-kaur-46aab0308"
+              target="_blank"
+              rel="noopener noreferrer"
+              >LinkedIn <span aria-hidden="true">↗</span></a
+            >
+            <a href="mailto:kaurdarshnoor30@gmail.com"
+              >Email <span aria-hidden="true">↗</span></a
+            >
+          </div>
+        </div>
 
-    .btn-group {
-      margin-top: 20px;
-    }
+        <aside
+          class="security-console reveal"
+          aria-label="Project evidence snapshot"
+        >
+          <div class="console-bar">
+            <div class="console-dots" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <span>portfolio://security-evidence</span>
+            <span class="console-live"><span></span> LIVE</span>
+          </div>
 
-    .btn {
-      display: inline-block;
-      padding: 12px 24px;
-      margin: 10px;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: 0.3s;
-      border: 1px solid #00ffcc;
-      color: #00ffcc;
-      background: rgba(255,255,255,0.03);
-    }
+          <div class="console-body">
+            <p class="console-label">CURRENT FOCUS</p>
+            <h2>Detection engineering &amp; security analytics</h2>
 
-    .btn:hover {
-      background: #00ffcc;
-      color: black;
-      transform: translateY(-3px);
-      box-shadow: 0 0 15px rgba(0,255,204,0.5);
-    }
+            <div class="console-metrics">
+              <div>
+                <strong>03</strong>
+                <span>public security projects</span>
+              </div>
+              <div>
+                <strong>31</strong>
+                <span>URL and domain features</span>
+              </div>
+              <div>
+                <strong>70</strong>
+                <span>controlled-test alerts</span>
+              </div>
+            </div>
 
-    section {
-      padding: 90px 10%;
-    }
-
-    h2 {
-      text-align: center;
-      margin-bottom: 40px;
-      font-size: 2.4rem;
-      color: #00ffcc;
-    }
-
-    .card-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 25px;
-    }
-
-    .card {
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 20px;
-      padding: 30px;
-      backdrop-filter: blur(10px);
-      transition: 0.4s;
-    }
-
-    .card:hover {
-      transform: translateY(-8px);
-      border-color: #00ffcc;
-      box-shadow: 0 0 20px rgba(0,255,204,0.2);
-    }
-
-    .card h3 {
-      color: #00bfff;
-      margin-bottom: 15px;
-      font-size: 1.4rem;
-    }
-
-    .card p {
-      color: #d0d0d0;
-      margin-bottom: 20px;
-    }
-
-    .card ul {
-      list-style: none;
-    }
-
-    .card ul li {
-      margin-bottom: 10px;
-      color: #dcdcdc;
-    }
-
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 15px;
-    }
-
-    .skill {
-      padding: 12px 20px;
-      border-radius: 30px;
-      border: 1px solid #00ffcc;
-      background: rgba(0,255,204,0.08);
-      transition: 0.3s;
-    }
-
-    .skill:hover {
-      background: #00ffcc;
-      color: black;
-    }
-
-    .timeline {
-      max-width: 900px;
-      margin: auto;
-    }
-
-    .timeline-item {
-      margin-bottom: 30px;
-      padding: 25px;
-      border-left: 3px solid #00ffcc;
-      background: rgba(255,255,255,0.03);
-      border-radius: 10px;
-    }
-
-    .timeline-item h3 {
-      color: #00bfff;
-      margin-bottom: 8px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 40px;
-      color: #888;
-      border-top: 1px solid rgba(255,255,255,0.05);
-    }
-
-    @media(max-width:768px) {
-
-      .hero h1 {
-        font-size: 2.8rem;
-      }
-
-      .typing {
-        font-size: 1.1rem;
-      }
-
-      section {
-        padding: 70px 7%;
-      }
-    }
-  </style>
-</head>
-
-<body>
-
-  <canvas id="matrix"></canvas>
-
-  <!-- HERO SECTION -->
-
-  <header>
-
-    <div class="hero">
-
-      <h1>Darshnoor Kaur</h1>
-
-      <div class="typing">
-        Cybersecurity Enthusiast • AWS Cloud Learner • Python Developer
+            <div
+              class="event-log"
+              role="list"
+              aria-label="Security project event log"
+            >
+              <div role="listitem">
+                <span class="event-sequence">01</span
+                ><span class="event-ok">PASS</span>
+                <p>Packet capture pipeline verified</p>
+              </div>
+              <div role="listitem">
+                <span class="event-sequence">02</span
+                ><span class="event-ok">PASS</span>
+                <p>Risk scoring and explanations built</p>
+              </div>
+              <div role="listitem">
+                <span class="event-sequence">03</span
+                ><span class="event-info">INFO</span>
+                <p>Cloud security skills in progress</p>
+              </div>
+            </div>
+          </div>
+        </aside>
       </div>
 
-      <p class="intro">
-        Computer Engineering undergraduate at Amity University Punjab passionate about cybersecurity,
-        cloud computing, Python development, and security operations.
-        Skilled in phishing detection systems, cloud fundamentals, networking,
-        and threat analysis with certifications from AWS, Cisco, IBM, and Forage.
-      </p>
-
-      <div class="btn-group">
-
-        <a class="btn"
-          href="https://github.com/darshnoor30"
-          target="_blank">
-          GitHub
-        </a>
-
-        <a class="btn"
-          href="https://www.linkedin.com/in/darshnoor-kaur-46aab0308"
-          target="_blank">
-          LinkedIn
-        </a>
-
-        <a class="btn"
-          href="Jake_s_Resume (6).pdf"
-          target="_blank">
-          Resume
-        </a>
-
+      <div
+        class="shell proof-strip reveal"
+        role="list"
+        aria-label="Portfolio highlights"
+      >
+        <div role="listitem">
+          <strong>Python + FastAPI</strong><span>Security backends</span>
+        </div>
+        <div role="listitem">
+          <strong>React + Streamlit</strong><span>Analyst interfaces</span>
+        </div>
+        <div role="listitem">
+          <strong>Scapy + Threat Intel</strong><span>Detection signals</span>
+        </div>
+        <div role="listitem">
+          <strong>AWS + IAM</strong><span>Cloud foundations</span>
+        </div>
       </div>
-
-    </div>
-
-  </header>
-<!-- SKILLS -->
-
-<section>
-
-  <h2>Technical Skills</h2>
-
-  <div class="skills">
-
-    <div class="skill">Python</div>
-
-    <div class="skill">C</div>
-
-    <div class="skill">C++</div>
-
-    <div class="skill">Java</div>
-
-    <div class="skill">Cybersecurity</div>
-
-    <div class="skill">Threat Detection</div>
-
-    <div class="skill">Network Security</div>
-
-    <div class="skill">Web Security Basics</div>
-
-    <div class="skill">SOC Operations</div>
-
-    <div class="skill">Log Analysis</div>
-
-    <div class="skill">AWS Cloud</div>
-
-    <div class="skill">AWS IAM</div>
-
-    <div class="skill">IAM Fundamentals</div>
-
-    <div class="skill">Linux</div>
-
-    <div class="skill">Tkinter</div>
-
-    <div class="skill">Git & GitHub</div>
-
-    <div class="skill">Data Visualization</div>
-
-    <div class="skill">Problem Solving</div>
-
-    <div class="skill">Analytical Thinking</div>
-
-    <div class="skill">Communication</div>
-
-    <div class="skill">Team Collaboration</div>
-
-  </div>
-
-</section>
-  
-<!-- PROJECTS -->
-
-<section>
-
-  <h2>Featured Cybersecurity Project</h2>
-
-  <div class="card-container">
-
-    <div class="card">
-
-      <h3>🔐 Phishing Email Detector</h3>
-
-      <p>
-        Engineered a Python-based phishing email detection application
-        with an interactive Tkinter GUI capable of identifying suspicious
-        emails using rule-based threat analysis, malicious keyword inspection,
-        and dynamic risk scoring techniques.
-      </p>
-
-      <br>
-
-      <ul>
-
-        <li>✔️ Built using Python and Tkinter</li>
-
-        <li>✔️ Detects suspicious URLs and phishing indicators</li>
-
-        <li>✔️ Implements dynamic email risk score calculation</li>
-
-        <li>✔️ Performs keyword-based threat classification</li>
-
-        <li>✔️ Interactive graphical dashboard for real-time analysis</li>
-
-        <li>✔️ Beginner-focused cybersecurity awareness tool</li>
-
-      </ul>
-
-      <br>
-
-      <a class="btn"
-         href="https://github.com/darshnoor30/phishing-email-detector"
-         target="_blank">
-         🔗 View Project
-      </a>
-
-    </div>
-
-  </div>
-
-</section>
-<!-- CERTIFICATIONS -->
-
-<section>
-
-  <h2>Certifications & Virtual Experience</h2>
-
-  <div class="card-container">
-
-    <div class="card">
-      <h3>☁️ AWS Academy Graduate – Cloud Developing</h3>
-      <p>Amazon Web Services • 2026</p>
-    </div>
-
-    <div class="card">
-      <h3>☁️ AWS Academy Graduate – Cloud Foundations</h3>
-      <p>Amazon Web Services • 2026</p>
-    </div>
-
-    <div class="card">
-      <h3>🔐 Introduction to Cybersecurity</h3>
-      <p>Cisco Networking Academy • 2026</p>
-    </div>
-
-    <div class="card">
-      <h3>🛡️ Getting Started with Cybersecurity</h3>
-      <p>IBM • 2026</p>
-    </div>
-
-    <div class="card">
-      <h3>💳 Mastercard Cybersecurity Job Simulation</h3>
-      <p>Forage • 2026</p>
-    </div>
-
-    <div class="card">
-      <h3>🏦 Commonwealth Bank Cybersecurity Job Simulation</h3>
-      <p>Forage • 2026</p>
-    </div>
-
-    <div class="card">
-      <h3>🖥️ Datacom Cyber Security Operations Job Simulation</h3>
-      <p>Forage • 2026</p>
-    </div>
-
-    <div class="card">
-      <h3>📊 Tata Data Visualisation: Empowering Business with Effective Insights</h3>
-      <p>Forage • 2026</p>
-    </div>
-
-    <div class="card">
-      <h3>🔐 Tata Cybersecurity Analyst Job Simulation</h3>
-      <p>Forage • 2026</p>
-    </div>
-
-    <div class="card">
-      <h3>📦 Basics of Sales Order Management in Supply Chain Management</h3>
-      <p>TCS • 2026</p>
-    </div>
-
-    <div class="card">
-      <h3>🤖 Master ChatGPT: Transform Your Life with AI Chatbots</h3>
-      <p>Dhruv Rathee • 2026</p>
-    </div>
-
-    <div class="card">
-      <h3>⚡ AI Tools Workshop</h3>
-      <p>Be10x • 2026</p>
-    </div>
-
-  </div>
-
-</section>
-  
-        
-  
-
-  <!-- CONTACT -->
-
-  <section>
-
-    <h2>Contact</h2>
-
-    <div class="btn-group" style="text-align:center;">
-
-      <a class="btn"
-        href="mailto:kaurdarshnoor30@gmail.com">
-        Email
-      </a>
-
-      <a class="btn"
-        href="https://github.com/darshnoor30"
-        target="_blank">
-        GitHub
-      </a>
-
-      <a class="btn"
-        href="https://www.linkedin.com/in/darshnoor-kaur-46aab0308"
-        target="_blank">
-        LinkedIn
-      </a>
-
-    </div>
-
-  </section>
-
-  <footer>
-
-    <p>
-      © 2026 Darshnoor Kaur • Cybersecurity Portfolio
-    </p>
-
-  </footer>
-
-  <!-- MATRIX EFFECT -->
-
-  <script>
-
-    const canvas = document.getElementById("matrix");
-    const ctx = canvas.getContext("2d");
-
-    canvas.width = window.innerWidth;
-    canvas.height = window.innerHeight;
-
-    const letters = "01";
-    const fontSize = 14;
-    const columns = canvas.width / fontSize;
-
-    const drops = [];
-
-    for (let i = 0; i < columns; i++) {
-      drops[i] = 1;
-    }
-
-    function draw() {
-
-      ctx.fillStyle = "rgba(5, 8, 22, 0.05)";
-      ctx.fillRect(0, 0, canvas.width, canvas.height);
-
-      ctx.fillStyle = "#00ffcc";
-      ctx.font = fontSize + "px monospace";
-
-      for (let i = 0; i < drops.length; i++) {
-
-        const text = letters[Math.floor(Math.random() * letters.length)];
-
-        ctx.fillText(text, i * fontSize, drops[i] * fontSize);
-
-        if (drops[i] * fontSize > canvas.height &&
-          Math.random() > 0.975) {
-          drops[i] = 0;
-        }
-
-        drops[i]++;
-      }
-    }
-
-    setInterval(draw, 35);
-
-  </script>
-
-</body>
-
+    </header>
+
+    <main id="main-content">
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="shell about-grid">
+          <div class="section-heading reveal">
+            <p class="section-kicker">01 / About</p>
+            <h2 id="about-title">
+              Curious by nature.<br />Evidence-led by practice.
+            </h2>
+          </div>
+
+          <div class="about-content reveal">
+            <p class="about-lead">
+              I’m building toward a career in cybersecurity by combining
+              coursework with practical security engineering projects—not just
+              collecting tools, but learning how detection logic, data, APIs,
+              dashboards, and analyst decisions fit together.
+            </p>
+            <p>
+              My current work spans phishing analysis, network traffic
+              monitoring, explainable risk scoring, dashboard analytics, and AWS
+              identity fundamentals. I care about clear documentation,
+              responsible claims, and making technical findings easy to act on.
+            </p>
+
+            <div
+              class="timeline"
+              role="list"
+              aria-label="Education and experience"
+            >
+              <article role="listitem">
+                <div class="timeline-marker" aria-hidden="true"></div>
+                <div>
+                  <p class="timeline-meta">Sep 2024 — Sep 2028</p>
+                  <h3>B.Tech, Computer Engineering</h3>
+                  <p>Amity University Punjab</p>
+                </div>
+              </article>
+              <article role="listitem">
+                <div class="timeline-marker" aria-hidden="true"></div>
+                <div>
+                  <p class="timeline-meta">Jun 2024 — Present</p>
+                  <h3>Home Tutor</h3>
+                  <p>
+                    Mentoring 10+ students while strengthening communication,
+                    leadership, and analytical thinking.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section projects-section"
+        id="projects"
+        aria-labelledby="projects-title"
+      >
+        <div class="shell">
+          <div class="section-heading split-heading reveal">
+            <div>
+              <p class="section-kicker">02 / Selected work</p>
+              <h2 id="projects-title">
+                Security projects with<br />traceable evidence.
+              </h2>
+            </div>
+            <p>
+              Each project links to public source code. The descriptions below
+              reflect functionality present in the repositories—not speculative
+              features.
+            </p>
+          </div>
+
+          <article class="project project-featured reveal">
+            <div class="project-copy">
+              <div class="project-topline">
+                <span class="project-number">01</span>
+                <span class="project-label"
+                  >Flagship · Full-stack security engineering</span
+                >
+              </div>
+              <h3>SentinelScan</h3>
+              <p class="project-summary">
+                An end-to-end phishing URL detection and security analytics
+                platform built around a React interface, FastAPI backend,
+                machine-learning classification, threat-intelligence modules,
+                explainable risk scoring, and scan analytics.
+              </p>
+
+              <ul class="project-evidence">
+                <li>
+                  <strong>31-feature pipeline</strong> spanning URL structure,
+                  SSL/TLS, DNS, WHOIS, and domain signals.
+                </li>
+                <li>
+                  <strong>Explainable decisions</strong> with prediction
+                  confidence, risk score, severity, and human-readable reasons.
+                </li>
+                <li>
+                  <strong>Analyst workflow</strong> covering API-key access,
+                  scan history, health monitoring, and dashboard endpoints.
+                </li>
+                <li>
+                  <strong>Model experimentation</strong> across multiple
+                  classifiers with Random Forest selected for the application.
+                </li>
+              </ul>
+
+              <div
+                class="tech-list"
+                role="list"
+                aria-label="SentinelScan technologies"
+              >
+                <span role="listitem">Python</span
+                ><span role="listitem">FastAPI</span
+                ><span role="listitem">React</span
+                ><span role="listitem">SQLAlchemy</span
+                ><span role="listitem">Machine Learning</span>
+              </div>
+
+              <a
+                class="project-link"
+                href="https://github.com/darshnoor30/SentinelScan"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View source and case study
+                <span aria-hidden="true">↗</span></a
+              >
+            </div>
+
+            <div
+              class="project-visual sentinel-scan-visual"
+              role="img"
+              aria-label="SentinelScan capability overview"
+            >
+              <div class="visual-header">
+                <span>SentinelScan</span
+                ><span class="visual-status">SYSTEM READY</span>
+              </div>
+              <div class="url-bar">
+                <span>URL</span>
+                <p>https://example-domain.com/login</p>
+                <span class="fake-button" aria-hidden="true">Analyse</span>
+              </div>
+              <div class="scan-result">
+                <div class="risk-ring"><span>72</span><small>RISK</small></div>
+                <div>
+                  <p class="result-label">VERDICT</p>
+                  <strong>Suspicious</strong>
+                  <span>Confidence and evidence combined</span>
+                </div>
+              </div>
+              <div class="signal-grid">
+                <div><span>SSL</span><strong>Valid</strong></div>
+                <div><span>DNS</span><strong>Resolved</strong></div>
+                <div><span>Domain</span><strong>Review</strong></div>
+                <div><span>Threat intel</span><strong>2 signals</strong></div>
+              </div>
+              <p class="visual-note">
+                Conceptual interface based on implemented project capabilities.
+              </p>
+            </div>
+          </article>
+
+          <article class="project project-featured project-reverse reveal">
+            <div class="project-copy">
+              <div class="project-topline">
+                <span class="project-number">02</span>
+                <span class="project-label">SOC lab · Network monitoring</span>
+              </div>
+              <h3>SentinelNet</h3>
+              <p class="project-summary">
+                A Python-based SOC monitoring project that captures live TCP/UDP
+                traffic, detects suspicious services, records categorized
+                alerts, and presents security activity through a Streamlit
+                analytics dashboard.
+              </p>
+
+              <ul class="project-evidence">
+                <li>
+                  <strong>Live capture</strong> with Scapy-based IP, TCP, and
+                  UDP packet processing.
+                </li>
+                <li>
+                  <strong>Detection rules</strong> for exposed or suspicious
+                  services including Telnet, SMB, RDP, and known backdoor ports.
+                </li>
+                <li>
+                  <strong>70 controlled-test alerts</strong> categorized across
+                  Critical, High, and Medium severity.
+                </li>
+                <li>
+                  <strong>Analyst views</strong> for severity distribution, top
+                  threat ports, trends, and activity timelines.
+                </li>
+              </ul>
+
+              <div
+                class="tech-list"
+                role="list"
+                aria-label="SentinelNet technologies"
+              >
+                <span role="listitem">Python</span
+                ><span role="listitem">Scapy</span
+                ><span role="listitem">Streamlit</span
+                ><span role="listitem">Plotly</span
+                ><span role="listitem">CSV Logging</span>
+              </div>
+
+              <a
+                class="project-link"
+                href="https://github.com/darshnoor30/SentinelNet"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View source, architecture, and screenshots
+                <span aria-hidden="true">↗</span></a
+              >
+            </div>
+
+            <figure class="project-visual dashboard-visual">
+              <img
+                src="https://raw.githubusercontent.com/darshnoor30/SentinelNet/main/screenshots/dashboard_main.png"
+                alt="SentinelNet Streamlit dashboard showing alert totals and severity analytics"
+                loading="lazy"
+                decoding="async"
+              />
+              <figcaption>
+                Dashboard captured from the public SentinelNet repository.
+              </figcaption>
+            </figure>
+          </article>
+
+          <article class="project project-compact reveal">
+            <div class="project-copy">
+              <div class="project-topline">
+                <span class="project-number">03</span>
+                <span class="project-label"
+                  >Security fundamentals · Desktop application</span
+                >
+              </div>
+              <h3>Phishing Email Detector</h3>
+              <p class="project-summary">
+                A Python and Tkinter application that applies transparent,
+                rule-based analysis to email text and returns a risk score,
+                detected indicators, and a clear verdict.
+              </p>
+
+              <div class="compact-evidence">
+                <div>
+                  <strong>Keyword analysis</strong
+                  ><span
+                    >Flags common urgency, credential, banking, and reward
+                    language.</span
+                  >
+                </div>
+                <div>
+                  <strong>Link signal</strong
+                  ><span>Includes URLs as an additional risk indicator.</span>
+                </div>
+                <div>
+                  <strong>Explainable output</strong
+                  ><span
+                    >Shows the score and the exact terms that contributed.</span
+                  >
+                </div>
+              </div>
+
+              <div
+                class="tech-list"
+                role="list"
+                aria-label="Phishing Email Detector technologies"
+              >
+                <span role="listitem">Python</span
+                ><span role="listitem">Tkinter</span
+                ><span role="listitem">Rule-based Detection</span>
+              </div>
+
+              <a
+                class="project-link"
+                href="https://github.com/darshnoor30/phishing-email-detector"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View source <span aria-hidden="true">↗</span></a
+              >
+            </div>
+
+            <div
+              class="code-sample"
+              role="region"
+              aria-label="Phishing Email Detector logic preview"
+            >
+              <div class="code-bar">
+                <span></span><span></span><span></span>
+                <p>detector.py</p>
+              </div>
+              <pre><code><span class="code-muted"># transparent risk signals</span>
+signals = [
+  <span class="code-string">"urgent language"</span>,
+  <span class="code-string">"suspicious link"</span>,
+  <span class="code-string">"sender pattern"</span>
+]
+
+verdict = analyse(email, signals)
+explain(verdict.score, verdict.matches)</code></pre>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="skills" aria-labelledby="skills-title">
+        <div class="shell">
+          <div class="section-heading split-heading reveal">
+            <div>
+              <p class="section-kicker">03 / Capabilities</p>
+              <h2 id="skills-title">
+                Skills shaped by<br />building and testing.
+              </h2>
+            </div>
+            <p>
+              The strongest skills here are backed by the projects above and by
+              structured cloud and cybersecurity learning.
+            </p>
+          </div>
+
+          <div class="skills-grid">
+            <article class="skill-group reveal">
+              <span class="skill-index">01</span>
+              <h3>Security</h3>
+              <ul>
+                <li>Phishing analysis</li>
+                <li>Network traffic inspection</li>
+                <li>Threat detection logic</li>
+                <li>SOC monitoring workflows</li>
+                <li>Alert triage and severity</li>
+                <li>Threat-intelligence concepts</li>
+              </ul>
+            </article>
+
+            <article class="skill-group reveal">
+              <span class="skill-index">02</span>
+              <h3>Engineering</h3>
+              <ul>
+                <li>Python</li>
+                <li>FastAPI and REST APIs</li>
+                <li>React and JavaScript</li>
+                <li>SQLAlchemy and SQLite</li>
+                <li>Scapy and Streamlit</li>
+                <li>Pandas and Plotly</li>
+              </ul>
+            </article>
+
+            <article class="skill-group reveal">
+              <span class="skill-index">03</span>
+              <h3>Cloud &amp; Tools</h3>
+              <ul>
+                <li>AWS cloud foundations</li>
+                <li>AWS IAM fundamentals</li>
+                <li>Linux and Windows</li>
+                <li>Git and GitHub</li>
+                <li>Jupyter and data analysis</li>
+                <li>Technical documentation</li>
+              </ul>
+            </article>
+
+            <article class="skill-group reveal">
+              <span class="skill-index">04</span>
+              <h3>Professional</h3>
+              <ul>
+                <li>Analytical problem-solving</li>
+                <li>Clear communication</li>
+                <li>Independent learning</li>
+                <li>Mentoring and leadership</li>
+                <li>Structured reporting</li>
+                <li>Team collaboration</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section credentials-section"
+        id="credentials"
+        aria-labelledby="credentials-title"
+      >
+        <div class="shell">
+          <div class="section-heading split-heading reveal">
+            <div>
+              <p class="section-kicker">04 / Credentials</p>
+              <h2 id="credentials-title">
+                Focused learning,<br />not a badge wall.
+              </h2>
+            </div>
+            <p>
+              Selected cybersecurity and cloud credentials that support the
+              direction of my practical work.
+            </p>
+          </div>
+
+          <div class="credentials-grid">
+            <article class="credential reveal">
+              <span>AWS Academy</span>
+              <h3>Cloud Developing</h3>
+              <p>Cloud application and service fundamentals · 2026</p>
+            </article>
+            <article class="credential reveal">
+              <span>AWS Academy</span>
+              <h3>Cloud Foundations</h3>
+              <p>Core AWS services, security, and architecture · 2026</p>
+            </article>
+            <article class="credential reveal">
+              <span>ISC2</span>
+              <h3>Candidate Status</h3>
+              <p>Cybersecurity professional pathway · 2026–2027</p>
+            </article>
+            <article class="credential reveal">
+              <span>Cisco Networking Academy</span>
+              <h3>Introduction to Cybersecurity</h3>
+              <p>Threats, protection, and security careers · 2026</p>
+            </article>
+            <article class="credential reveal">
+              <span>IBM</span>
+              <h3>Getting Started with Cybersecurity</h3>
+              <p>Security concepts and defensive foundations · 2026</p>
+            </article>
+            <article class="credential reveal">
+              <span>Forage</span>
+              <h3>Cybersecurity Job Simulations</h3>
+              <p>Datacom, Mastercard, Commonwealth Bank, and Tata · 2026</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="section contact-section"
+        id="contact"
+        aria-labelledby="contact-title"
+      >
+        <div class="shell contact-card reveal">
+          <div>
+            <p class="section-kicker">05 / Let’s connect</p>
+            <h2 id="contact-title">
+              Looking for a curious builder<br />with a security mindset?
+            </h2>
+            <p>
+              I’m seeking opportunities to learn from security teams and
+              contribute to practical work in SOC operations, detection
+              engineering, cloud security, threat analysis, or security
+              automation.
+            </p>
+          </div>
+
+          <div class="contact-actions">
+            <a
+              class="button button-primary"
+              href="mailto:kaurdarshnoor30@gmail.com"
+              >Email me</a
+            >
+            <a
+              class="button button-secondary"
+              href="https://www.linkedin.com/in/darshnoor-kaur-46aab0308"
+              target="_blank"
+              rel="noopener noreferrer"
+              >Connect on LinkedIn</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="shell footer-inner">
+        <div>
+          <strong>Darshnoor Kaur</strong>
+          <p>Cybersecurity · Security Engineering · Cloud</p>
+        </div>
+        <p>
+          Designed and built with evidence. <span id="current-year">2026</span>
+        </p>
+      </div>
+    </footer>
+  </body>
 </html>
