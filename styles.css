@@ -1289,6 +1289,16 @@ input {
   min-width: 195px;
 }
 
+.copy-email {
+  cursor: pointer;
+}
+
+.copy-email.copied {
+  border-color: rgba(103, 242, 179, 0.55);
+  background: rgba(103, 242, 179, 0.12);
+  color: var(--green);
+}
+
 .site-footer {
   padding: 34px 0;
   border-top: 1px solid var(--line);

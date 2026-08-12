@@ -6,11 +6,60 @@
     ...document.querySelectorAll('.nav-links a[href^="#"]'),
   ];
   const year = document.querySelector("#current-year");
+  const copyEmailButton = document.querySelector(".copy-email");
+  const copyEmailLabel = copyEmailButton?.querySelector(".copy-email-label");
   const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
 
   if (year) {
     year.textContent = new Date().getFullYear();
   }
+
+  copyEmailButton?.addEventListener("click", async () => {
+    const email = copyEmailButton.dataset.email;
+    if (!email) return;
+
+    let copied = false;
+
+    if (window.isSecureContext && navigator.clipboard?.writeText) {
+      try {
+        await navigator.clipboard.writeText(email);
+        copied = true;
+      } catch {
+        copied = false;
+      }
+    }
+
+    if (!copied) {
+      const textArea = document.createElement("textarea");
+      textArea.value = email;
+      textArea.setAttribute("readonly", "");
+      textArea.style.position = "fixed";
+      textArea.style.opacity = "0";
+      document.body.append(textArea);
+      textArea.select();
+
+      try {
+        copied = document.execCommand("copy");
+      } catch {
+        copied = false;
+      }
+
+      textArea.remove();
+    }
+
+    if (!copied) {
+      window.prompt("Copy this email address:", email);
+      return;
+    }
+
+    copyEmailButton.classList.add("copied");
+    if (copyEmailLabel) copyEmailLabel.textContent = "Email copied ✓";
+
+    window.setTimeout(() => {
+      copyEmailButton.classList.remove("copied");
+      if (copyEmailLabel) copyEmailLabel.textContent = "Copy email";
+    }, 2200);
+  });
 
   const updateNavigationSurface = () => {
     nav?.classList.toggle("scrolled", window.scrollY > 18);
