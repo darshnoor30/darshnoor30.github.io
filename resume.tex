@@ -1,0 +1,190 @@
+\documentclass[10pt,letterpaper]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[margin=0.52in]{geometry}
+\usepackage{enumitem}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{xcolor}
+\usepackage{microtype}
+\usepackage[
+  colorlinks=true,
+  urlcolor=linkblue,
+  pdftitle={Darshnoor Kaur - Cybersecurity Resume},
+  pdfauthor={Darshnoor Kaur}
+]{hyperref}
+
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+\definecolor{navy}{HTML}{10243E}
+\definecolor{linkblue}{HTML}{0B5CAD}
+\definecolor{muted}{HTML}{3F4C5A}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{0pt}
+\setlength{\emergencystretch}{2em}
+\urlstyle{same}
+
+\titleformat{\section}
+  {\color{navy}\bfseries\normalsize}
+  {}{0pt}{\MakeUppercase}
+  [\vspace{1pt}\color{navy}\titlerule]
+\titlespacing*{\section}{0pt}{5.5pt}{3.2pt}
+
+\newenvironment{resumeitems}{
+  \begin{itemize}[
+    leftmargin=13pt,
+    label=\textbullet,
+    itemsep=0.5pt,
+    parsep=0pt,
+    topsep=1.5pt,
+    partopsep=0pt
+  ]
+}{
+  \end{itemize}
+}
+
+\newcommand{\projectheading}[3]{%
+  \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{8pt}}r@{}}
+    \textbf{#1} \href{#2}{\textcolor{linkblue}{[GitHub]}} &
+    \textit{\color{muted}#3}
+  \end{tabularx}
+}
+
+\begin{document}
+
+\begin{center}
+  {\fontsize{23}{25}\selectfont\bfseries\color{navy} Darshnoor Kaur}\\[-1pt]
+  {\large\bfseries Cybersecurity and Security Engineering Student}\\[2.5pt]
+  {\small
+    Mohali, Punjab, India
+    \enspace\textbar\enspace
+    \href{mailto:kaurdarshnoor30@gmail.com}{kaurdarshnoor30@gmail.com}
+    \enspace\textbar\enspace
+    \href{https://www.linkedin.com/in/darshnoor-kaur-46aab0308}{LinkedIn}
+    \enspace\textbar\enspace
+    \href{https://github.com/darshnoor30}{GitHub}
+    \enspace\textbar\enspace
+    \href{https://darshnoor30.github.io/}{Portfolio}
+  }
+\end{center}
+\vspace{-5pt}
+
+\section{Profile}
+\small
+B.Tech Computer Science Engineering student building tested defensive-security
+tools for phishing detection, network monitoring, explainable risk scoring, and
+SOC workflows. Published three public security projects with CI and 50+ automated
+tests across Python and full-stack systems. Seeking cybersecurity, SOC, detection
+engineering, cloud security, or security engineering internships.
+
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}Xr@{}}
+  \textbf{Amity University Punjab}, B.Tech Computer Science Engineering &
+  Sep 2024 - Sep 2028\\
+  \small Mohali, Punjab \textbar{} CGPA: 7.61/10 \textbar{} Latest SGPA: 8.33/10 &
+\end{tabularx}
+\vspace{1pt}
+
+\small
+\textbf{Ryan International School} - Class XII, PCM: 80.4\% \hfill 2024\quad
+\textbar\quad
+\textbf{Vivek High School} - Class X: 94.2\% \hfill 2022
+
+\section{Selected Security Projects}
+\projectheading
+  {SentinelScan - Phishing URL Detection Platform}
+  {https://github.com/darshnoor30/SentinelScan}
+  {Python, FastAPI, React, Random Forest}
+\begin{resumeitems}
+  \small
+  \item Built an end-to-end platform that combines 31 engineered URL and domain
+    features with SSL, DNS, WHOIS, reputation, and optional threat-intelligence
+    signals.
+  \item Implemented explainable risk fusion, three verdict classes, API-key
+    authentication, scan history, and dashboard analytics; the selected model
+    recorded 99.84\% accuracy on the project evaluation split, with real-world
+    limitations documented.
+\end{resumeitems}
+
+\projectheading
+  {SentinelNet - Explainable Network Threat Detection and SOC Console}
+  {https://github.com/darshnoor30/SentinelNet}
+  {Python, Scapy, Streamlit, Plotly, Pandas}
+\begin{resumeitems}
+  \small
+  \item Built a privacy-aware packet-metadata pipeline with typed service rules,
+    normalized CSV telemetry, and rolling detection for 10 unique destination
+    ports within 60 seconds.
+  \item Delivered an analyst-focused dashboard with severity and source filters,
+    priority-sorted alerts, timelines, auto-refresh, and CSV export; added Ruff,
+    Pytest, coverage gates, and a Python-version CI matrix.
+\end{resumeitems}
+
+\projectheading
+  {Explainable Phishing Email Detector}
+  {https://github.com/darshnoor30/phishing-email-detector}
+  {Python, Tkinter, CLI, Pytest}
+\begin{resumeitems}
+  \small
+  \item Developed an offline, deterministic triage engine that detects
+    social-engineering language and URL-structure indicators, then returns a
+    normalized 0-100 risk score with weighted evidence and next steps.
+  \item Packaged the engine for reusable Python, CLI, JSON, and desktop-GUI
+    workflows with typed code, import-safe entry points, automated tests, CI,
+    security guidance, and no runtime network requests.
+\end{resumeitems}
+
+\section{Experience and Leadership}
+\begin{tabularx}{\linewidth}{@{}Xr@{}}
+  \textbf{Web Development Intern}, 3Skill Training &
+  2 months, 2026\\
+\end{tabularx}
+\begin{resumeitems}
+  \small
+  \item Completed a structured web-development internship focused on responsive
+    front-end implementation and practical project delivery.
+\end{resumeitems}
+\vspace{-1pt}
+\begin{tabularx}{\linewidth}{@{}Xr@{}}
+  \textbf{Home Tutor}, Self-Employed - Mohali and Chandigarh &
+  Jun 2024 - Present\\
+\end{tabularx}
+\begin{resumeitems}
+  \small
+  \item Teach 10+ CBSE and ICSE students across Mathematics, Science, English,
+    and Computer Science; create structured learning plans and explain complex
+    concepts clearly.
+\end{resumeitems}
+\vspace{-1pt}
+\small
+\textbf{Smart India Hackathon 2025:} Advanced to Round 3 with a Smart Tourist
+Safety Monitoring solution in the Travel and Tourism track.
+
+\section{Technical Skills}
+\small
+\textbf{Security:} Phishing analysis, network traffic inspection, detection
+logic, alert triage, SOC workflows, risk scoring, incident-response fundamentals\\
+\textbf{Programming:} Python, JavaScript, Java, C++, C, SQL\\
+\textbf{Frameworks and Data:} FastAPI, React, Vite, Streamlit, Scapy, SQLAlchemy,
+SQLite, Pandas, Plotly, Pytest\\
+\textbf{Security and Cloud Tools:} Wireshark, Nmap, Burp Suite, Kali Linux, Git,
+GitHub Actions, AWS IAM, EC2, DynamoDB\\
+\textbf{Languages:} English, Hindi, Punjabi; German (elementary)
+
+\section{Selected Credentials}
+\small
+\begin{tabularx}{\linewidth}{@{}Xr@{}}
+  AWS Academy Graduate - Cloud Developing & 2026\\
+  AWS Academy Graduate - Cloud Foundations & 2026\\
+  Cisco Networking Academy - Introduction to Cybersecurity & 2026\\
+  IBM SkillsBuild - Getting Started with Cybersecurity & 2026\\
+  Forage - Cybersecurity job simulations (Datacom and Mastercard) & 2026\\
+  ISC2 Candidate status & May 2026 - May 2027
+\end{tabularx}
+
+\end{document}
