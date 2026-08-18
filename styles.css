@@ -639,7 +639,10 @@ input {
 }
 
 .section {
-  padding: clamp(88px, 11vw, 150px) 0;
+  --section-padding-top: clamp(88px, 11vw, 150px);
+  --section-padding-bottom: clamp(88px, 11vw, 150px);
+  padding: var(--section-padding-top) 0 var(--section-padding-bottom);
+  scroll-margin-top: calc(0px - var(--section-padding-top));
 }
 
 .section + .section {
@@ -1248,7 +1251,7 @@ input {
 }
 
 .contact-section {
-  padding-top: clamp(88px, 11vw, 130px);
+  --section-padding-top: clamp(88px, 11vw, 130px);
 }
 
 .contact-card {
