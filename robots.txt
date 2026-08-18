@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://darshnoor30.github.io/sitemap.xml
