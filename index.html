@@ -90,10 +90,10 @@
             <span>signals into decisions.</span>
           </h1>
           <p class="hero-intro">
-            I’m <strong>Darshnoor Kaur</strong>, a Computer Engineering
-            undergraduate focused on phishing detection, SOC monitoring, network
-            security, threat intelligence, and cloud security. I turn security
-            concepts into working, documented tools.
+            I’m <strong>Darshnoor Kaur</strong>, a Computer Science Engineering
+            undergraduate focused on phishing detection, SOC monitoring,
+            network security, threat intelligence, and cloud security. I turn
+            security concepts into tested, documented tools.
           </p>
 
           <div class="hero-actions">
@@ -162,8 +162,8 @@
                 <span>URL and domain features</span>
               </div>
               <div>
-                <strong>70</strong>
-                <span>controlled-test alerts</span>
+                <strong>45</strong>
+                <span>automated project tests</span>
               </div>
             </div>
 
@@ -245,7 +245,7 @@
                 <div class="timeline-marker" aria-hidden="true"></div>
                 <div>
                   <p class="timeline-meta">Sep 2024 — Sep 2028</p>
-                  <h3>B.Tech, Computer Engineering</h3>
+                  <h3>B.Tech, Computer Science Engineering</h3>
                   <p>Amity University Punjab</p>
                 </div>
               </article>
@@ -315,8 +315,8 @@
                   scan history, health monitoring, and dashboard endpoints.
                 </li>
                 <li>
-                  <strong>Model experimentation</strong> across multiple
-                  classifiers with Random Forest selected for the application.
+                  <strong>Verified engineering</strong> with 18 deterministic
+                  tests, Python and React CI, and a containerized local demo.
                 </li>
               </ul>
 
@@ -400,8 +400,9 @@
                   services including Telnet, SMB, RDP, and known backdoor ports.
                 </li>
                 <li>
-                  <strong>70 controlled-test alerts</strong> categorized across
-                  Critical, High, and Medium severity.
+                  <strong>17 automated tests</strong> covering rule matches,
+                  scan detection, cooldowns, packet normalization, analytics,
+                  and CLI behavior.
                 </li>
                 <li>
                   <strong>Analyst views</strong> for severity distribution, top
@@ -454,27 +455,31 @@
               </div>
               <h3>Phishing Email Detector</h3>
               <p class="project-summary">
-                A Python and Tkinter application that applies transparent,
-                rule-based analysis to email text and returns a risk score,
-                detected indicators, and a clear verdict.
+                An offline Python engine, CLI, and Tkinter application that
+                applies transparent rule-based analysis to email text and
+                returns weighted evidence, next steps, and a normalized risk.
               </p>
 
               <div class="compact-evidence">
                 <div>
-                  <strong>Keyword analysis</strong
+                  <strong>Language signals</strong
                   ><span
-                    >Flags common urgency, credential, banking, and reward
-                    language.</span
+                    >Weights credential, urgency, financial, reward, and threat
+                    patterns without hiding the matched evidence.</span
                   >
                 </div>
                 <div>
-                  <strong>Link signal</strong
-                  ><span>Includes URLs as an additional risk indicator.</span>
+                  <strong>URL heuristics</strong
+                  ><span
+                    >Reviews IP hosts, HTTP, punycode, shorteners, encoded URLs,
+                    suspicious TLDs, and excessive subdomains.</span
+                  >
                 </div>
                 <div>
-                  <strong>Explainable output</strong
+                  <strong>Quality gates</strong
                   ><span
-                    >Shows the score and the exact terms that contributed.</span
+                    >10 tests, a 90% coverage gate, Ruff checks, and a two-version
+                    Python CI matrix.</span
                   >
                 </div>
               </div>
@@ -486,7 +491,8 @@
               >
                 <span role="listitem">Python</span
                 ><span role="listitem">Tkinter</span
-                ><span role="listitem">Rule-based Detection</span>
+                ><span role="listitem">Pytest</span
+                ><span role="listitem">GitHub Actions</span>
               </div>
 
               <a
@@ -507,15 +513,13 @@
                 <span></span><span></span><span></span>
                 <p>detector.py</p>
               </div>
-              <pre><code><span class="code-muted"># transparent risk signals</span>
-signals = [
-  <span class="code-string">"urgent language"</span>,
-  <span class="code-string">"suspicious link"</span>,
-  <span class="code-string">"sender pattern"</span>
-]
+              <pre><code><span class="code-muted"># transparent, reusable analysis</span>
+result = analyze_email(message)
 
-verdict = analyse(email, signals)
-explain(verdict.score, verdict.matches)</code></pre>
+print(result.severity, result.score)
+for indicator in result.indicators:
+    print(indicator.title,
+          indicator.evidence)</code></pre>
             </div>
           </article>
         </div>

@@ -4,9 +4,9 @@ Personal GitHub Pages portfolio highlighting practical security engineering work
 
 ## Featured projects
 
-- **SentinelScan** — React and FastAPI phishing URL detection platform with feature engineering, ML classification, threat-intelligence modules, explainable risk scoring, history, and analytics.
-- **SentinelNet** — Scapy-based network monitoring and suspicious-port detection with alert logging and a Streamlit SOC dashboard.
-- **Phishing Email Detector** — Transparent rule-based phishing analysis with a Python and Tkinter interface.
+- **SentinelScan** — React and FastAPI phishing URL detection platform with 31 engineered features, ML classification, explainable risk scoring, threat intelligence, 18 deterministic tests, CI, and Docker support.
+- **SentinelNet** — Scapy-based network monitoring and scan detection with structured alert logging, a Streamlit SOC dashboard, 17 tests, and two-version CI.
+- **Phishing Email Detector** — Offline, explainable rule-based phishing analysis with a reusable Python engine, CLI, Tkinter interface, and 10-test quality suite.
 
 ## Site structure
 
@@ -18,8 +18,14 @@ Personal GitHub Pages portfolio highlighting practical security engineering work
 ## Local preview
 
 ```bash
-npm install
+npm ci
 npm run dev
+```
+
+Production verification:
+
+```bash
+npm run build
 ```
 
 ## Accessibility and performance
@@ -29,6 +35,7 @@ npm run dev
 - Responsive layout down to narrow mobile widths
 - Reduced-motion support
 - Lazy-loaded project screenshot
-- No framework or build step required
+- No client framework or runtime dependency
+- GitHub Actions production-build verification
 
 Live site: <https://darshnoor30.github.io/>
