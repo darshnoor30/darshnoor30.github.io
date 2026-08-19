@@ -1,12 +1,13 @@
 # Darshnoor Kaur — Cybersecurity Portfolio
 
-Personal GitHub Pages portfolio highlighting practical security engineering work across phishing detection, network monitoring, threat intelligence, security analytics, and cloud fundamentals.
+Personal GitHub Pages portfolio highlighting practical security engineering work across firewall auditing, phishing detection, network monitoring, threat intelligence, security analytics, and cloud fundamentals.
 
 ## Featured projects
 
 - **SentinelScan** — React and FastAPI phishing URL detection platform with 31 engineered features, ML classification, explainable risk scoring, threat intelligence, 18 deterministic tests, CI, and Docker support.
 - **SentinelNet** — Scapy-based network monitoring and scan detection with structured alert logging, a Streamlit SOC dashboard, 17 tests, and two-version CI.
 - **Phishing Email Detector** — Offline, explainable rule-based phishing analysis with a reusable Python engine, CLI, Tkinter interface, and 10-test quality suite.
+- **FirewallGuard** — Explainable JSON and iptables-save firewall auditing with exposure, duplicate, shadowing, and policy checks; standards references, dashboard exports, Docker, CI, 44 tests, and 91% measured coverage.
 
 ## Site structure
 

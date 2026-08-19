@@ -7,7 +7,7 @@
     <title>Darshnoor Kaur | Cybersecurity &amp; Security Engineering</title>
     <meta
       name="description"
-      content="Cybersecurity portfolio of Darshnoor Kaur — practical work in phishing detection, network monitoring, threat intelligence, security analytics, Python, FastAPI, React, and AWS."
+      content="Cybersecurity portfolio of Darshnoor Kaur — practical work in firewall auditing, phishing detection, network monitoring, threat intelligence, security analytics, Python, FastAPI, React, and AWS."
     />
     <meta name="author" content="Darshnoor Kaur" />
     <meta name="theme-color" content="#07111f" />
@@ -27,7 +27,7 @@
     />
     <meta
       property="og:description"
-      content="Security engineering projects spanning phishing detection, network monitoring, threat intelligence, and SOC analytics."
+      content="Security engineering projects spanning firewall auditing, phishing detection, network monitoring, threat intelligence, and SOC analytics."
     />
     <meta name="twitter:card" content="summary" />
     <meta
@@ -36,7 +36,7 @@
     />
     <meta
       name="twitter:description"
-      content="Practical cybersecurity projects built with Python, FastAPI, React, Scapy, Streamlit, and AWS fundamentals."
+      content="Practical cybersecurity projects built with Python, iptables, FastAPI, React, Scapy, Streamlit, and AWS fundamentals."
     />
 
     <link rel="stylesheet" href="styles.css" />
@@ -91,8 +91,8 @@
           </h1>
           <p class="hero-intro">
             I’m <strong>Darshnoor Kaur</strong>, a Computer Science Engineering
-            undergraduate focused on phishing detection, SOC monitoring,
-            network security, threat intelligence, and cloud security. I turn
+            undergraduate focused on firewall auditing, phishing detection, SOC
+            monitoring, network security, threat intelligence, and cloud security. I turn
             security concepts into tested, documented tools.
           </p>
 
@@ -161,7 +161,7 @@
 
             <div class="console-metrics">
               <div>
-                <strong>03</strong>
+                <strong>04</strong>
                 <span>public security projects</span>
               </div>
               <div>
@@ -169,7 +169,7 @@
                 <span>URL and domain features</span>
               </div>
               <div>
-                <strong>45</strong>
+                <strong>89</strong>
                 <span>automated project tests</span>
               </div>
             </div>
@@ -191,8 +191,8 @@
               </div>
               <div role="listitem">
                 <span class="event-sequence">03</span
-                ><span class="event-info">INFO</span>
-                <p>Cloud security skills in progress</p>
+                ><span class="event-ok">PASS</span>
+                <p>Firewall policy audit validated</p>
               </div>
             </div>
           </div>
@@ -214,7 +214,7 @@
           <strong>Scapy + Threat Intel</strong><span>Detection signals</span>
         </div>
         <div role="listitem">
-          <strong>AWS + IAM</strong><span>Cloud foundations</span>
+          <strong>iptables + NIST/CIS</strong><span>Firewall assurance</span>
         </div>
       </div>
     </header>
@@ -237,9 +237,9 @@
               dashboards, and analyst decisions fit together.
             </p>
             <p>
-              My current work spans phishing analysis, network traffic
-              monitoring, explainable risk scoring, dashboard analytics, and AWS
-              identity fundamentals. I care about clear documentation,
+              My current work spans firewall policy auditing, phishing analysis,
+              network traffic monitoring, explainable risk scoring, dashboard
+              analytics, and AWS identity fundamentals. I care about clear documentation,
               responsible claims, and making technical findings easy to act on.
             </p>
 
@@ -529,6 +529,90 @@ for indicator in result.indicators:
           indicator.evidence)</code></pre>
             </div>
           </article>
+
+          <article class="project project-compact reveal">
+            <div class="project-copy">
+              <div class="project-topline">
+                <span class="project-number">04</span>
+                <span class="project-label"
+                  >Network security · Firewall assurance</span
+                >
+              </div>
+              <h3>FirewallGuard</h3>
+              <p class="project-summary">
+                An explainable firewall-rules auditor that parses JSON and
+                iptables-save configurations, normalizes policy semantics, and
+                produces evidence-backed findings for security review.
+              </p>
+
+              <div class="compact-evidence">
+                <div>
+                  <strong>Deterministic analysis</strong
+                  ><span
+                    >Identifies public administrative and database exposure,
+                    permissive policies, duplicate rules, and conservative
+                    shadowing without presenting the posture score as CVSS.</span
+                  >
+                </div>
+                <div>
+                  <strong>Traceable assurance</strong
+                  ><span
+                    >Maps relevant findings to selected NIST CSF 2.0, CIS
+                    Controls 8.1, and MITRE ATT&amp;CK references with clear
+                    non-certification boundaries.</span
+                  >
+                </div>
+                <div>
+                  <strong>Verified delivery</strong
+                  ><span
+                    >Includes a CLI, Streamlit dashboard, PDF/JSON/CSV exports,
+                    Docker support, CI, 44 automated tests, and 91% measured
+                    coverage.</span
+                  >
+                </div>
+              </div>
+
+              <div
+                class="tech-list"
+                role="list"
+                aria-label="FirewallGuard technologies"
+              >
+                <span role="listitem">Python</span
+                ><span role="listitem">iptables</span
+                ><span role="listitem">Streamlit</span
+                ><span role="listitem">ReportLab</span
+                ><span role="listitem">GitHub Actions</span>
+              </div>
+
+              <a
+                class="project-link"
+                href="https://github.com/darshnoor30/FirewallGuard"
+                target="_blank"
+                rel="noopener noreferrer"
+                >View source, tests, and sample report
+                <span aria-hidden="true">↗</span></a
+              >
+            </div>
+
+            <div
+              class="code-sample"
+              role="region"
+              aria-label="FirewallGuard command-line audit preview"
+            >
+              <div class="code-bar">
+                <span></span><span></span><span></span>
+                <p>firewallguard</p>
+              </div>
+              <pre><code><span class="code-muted"># audit an iptables-save ruleset</span>
+firewallguard rules.conf \
+  --format iptables \
+  --pdf output/audit.pdf \
+  --fail-on high
+
+<span class="code-muted"># policy gate: exit 2 when findings
+# meet or exceed the threshold</span></code></pre>
+            </div>
+          </article>
         </div>
       </section>
 
@@ -554,6 +638,8 @@ for indicator in result.indicators:
               <ul>
                 <li>Phishing analysis</li>
                 <li>Network traffic inspection</li>
+                <li>Firewall policy auditing</li>
+                <li>Least-privilege analysis</li>
                 <li>Threat detection logic</li>
                 <li>SOC monitoring workflows</li>
                 <li>Alert triage and severity</li>

@@ -77,10 +77,10 @@
 \section{Profile}
 \small
 B.Tech Computer Engineering student building tested defensive-security tools for
-phishing detection, network monitoring, explainable risk scoring, and SOC
-workflows. Published three public security projects with CI and 50+ automated
-tests. Seeking cybersecurity, SOC, detection engineering, cloud security, or
-security engineering internships.
+firewall auditing, phishing detection, network monitoring, explainable risk
+scoring, and SOC workflows. Published four public security projects with CI and
+89 automated tests. Seeking cybersecurity, SOC, detection engineering, cloud
+security, or security engineering internships.
 
 \section{Education}
 \begin{tabularx}{\linewidth}{@{}Xr@{}}
@@ -96,6 +96,20 @@ security engineering internships.
 \textbf{Vivek High School} - Class X: 94.2\% \hfill 2022
 
 \section{Selected Security Projects}
+\projectheading
+  {FirewallGuard - Explainable Firewall Rules Auditor}
+  {https://github.com/darshnoor30/FirewallGuard}
+  {Python, iptables, Streamlit, ReportLab}
+\begin{resumeitems}
+  \small
+  \item Built a deterministic auditor for JSON and iptables-save inputs that
+    normalizes IPv4/IPv6 CIDRs, ports, interfaces, connection states, and
+    default policies before analysis.
+  \item Detects public administrative and database exposure, permissive
+    policies, duplicates, and conservative shadowing; delivers CLI gates,
+    dashboard exports, and PDF/JSON evidence with 44 tests and 91\% coverage.
+\end{resumeitems}
+
 \projectheading
   {SentinelScan - Phishing URL Detection Platform}
   {https://github.com/darshnoor30/SentinelScan}
@@ -123,20 +137,6 @@ security engineering internships.
   \item Delivered an analyst-focused dashboard with severity and source filters,
     priority-sorted alerts, timelines, auto-refresh, and CSV export; added Ruff,
     Pytest, coverage gates, and a Python-version CI matrix.
-\end{resumeitems}
-
-\projectheading
-  {Explainable Phishing Email Detector}
-  {https://github.com/darshnoor30/phishing-email-detector}
-  {Python, Tkinter, CLI, Pytest}
-\begin{resumeitems}
-  \small
-  \item Developed an offline, deterministic triage engine that detects
-    social-engineering language and URL-structure indicators, then returns a
-    normalized 0-100 risk score with weighted evidence and next steps.
-  \item Packaged the engine for reusable Python, CLI, JSON, and desktop-GUI
-    workflows with typed code, import-safe entry points, automated tests, CI,
-    security guidance, and no runtime network requests.
 \end{resumeitems}
 
 \section{Experience and Leadership}
@@ -168,14 +168,14 @@ Safety Monitoring solution in the Travel and Tourism track.
 
 \section{Technical Skills}
 \small
-\textbf{Security:} Phishing analysis, network traffic inspection, detection
-logic, alert triage, SOC workflows, log analysis, risk scoring, incident-response,
-IAM, and data-security fundamentals\\
+\textbf{Security:} Firewall policy auditing, least-privilege analysis, phishing
+analysis, network traffic inspection, detection logic, alert triage, SOC
+workflows, log analysis, risk scoring, incident response, and IAM\\
 \textbf{Programming:} Python, JavaScript, Java, C++, C, SQL\\
 \textbf{Frameworks and Data:} FastAPI, React, Vite, Streamlit, Scapy, SQLAlchemy,
 SQLite, Pandas, Plotly, Pytest\\
-\textbf{Security and Cloud Tools:} Wireshark, Nmap, Burp Suite, Kali Linux, Git,
-GitHub Actions, AWS IAM, EC2, DynamoDB\\
+\textbf{Security and Cloud Tools:} iptables, Wireshark, Nmap, Burp Suite, Kali
+Linux, Docker, GitHub Actions, AWS IAM, EC2, DynamoDB\\
 \textbf{Languages:} English (fluent); Hindi and Punjabi (native/bilingual); German
 (elementary)
 
