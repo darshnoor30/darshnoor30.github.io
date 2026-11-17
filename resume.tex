@@ -16,8 +16,10 @@
   pdfauthor={Darshnoor Kaur}
 ]{hyperref}
 
+\ifdefined\pdfgentounicode
 \input{glyphtounicode}
 \pdfgentounicode=1
+\fi
 
 \definecolor{navy}{HTML}{10243E}
 \definecolor{linkblue}{HTML}{0B5CAD}
@@ -52,7 +54,7 @@
   \begin{tabularx}{\linewidth}{@{}>{\raggedright\arraybackslash}X@{\hspace{8pt}}r@{}}
     \textbf{#1} \href{#2}{\textcolor{linkblue}{[GitHub]}} &
     \textit{\color{muted}#3}
-  \end{tabularx}
+  \end{tabularx}\par\vspace{1pt}
 }
 
 \begin{document}
@@ -76,11 +78,7 @@
 
 \section{Profile}
 \small
-B.Tech Computer Engineering student building tested defensive-security tools for
-firewall auditing, phishing detection, network monitoring, explainable risk
-scoring, and SOC workflows. Published four public security projects with CI and
-89 automated tests. Seeking cybersecurity, SOC, detection engineering, cloud
-security, or security engineering internships.
+B.Tech Computer Engineering student building tested firewall, phishing, network-monitoring, and SOC tools. Published four public security projects with CI and 89 automated tests. Seeking cybersecurity and security engineering internships.
 
 \section{Education}
 \begin{tabularx}{\linewidth}{@{}Xr@{}}
@@ -95,7 +93,7 @@ security, or security engineering internships.
 \textbar\quad
 \textbf{Vivek High School} - Class X: 94.2\% \hfill 2022
 
-\section{Selected Security Projects}
+\section{Selected Projects}
 \projectheading
   {FirewallGuard - Explainable Firewall Rules Auditor}
   {https://github.com/darshnoor30/FirewallGuard}
@@ -126,7 +124,7 @@ security, or security engineering internships.
 \end{resumeitems}
 
 \projectheading
-  {SentinelNet - Explainable Network Threat Detection and SOC Console}
+  {SentinelNet - Network Detection and SOC Console}
   {https://github.com/darshnoor30/SentinelNet}
   {Python, Scapy, Streamlit, Plotly, Pandas}
 \begin{resumeitems}
@@ -139,6 +137,18 @@ security, or security engineering internships.
     Pytest, coverage gates, and a Python-version CI matrix.
 \end{resumeitems}
 
+\projectheading
+  {StreamFlix - Cinema Discovery Demo}
+  {https://github.com/darshnoor30/StreamFlix}
+  {JavaScript, Node.js, SQLite, Docker}
+\begin{resumeitems}
+  \small
+  \item Built a responsive catalog with search, genre filters, saved lists, and
+    demo watch-progress persistence in SQLite using private browser sessions.
+  \item Added prepared SQL statements, input validation, HttpOnly cookies, CSP,
+    rate limiting, and API regression tests passing in GitHub Actions; added
+    non-root Docker packaging. Private repository; playback is simulated.
+\end{resumeitems}
 \section{Experience and Leadership}
 \begin{tabularx}{\linewidth}{@{}Xr@{}}
   \textbf{Web Development Intern}, 3Skill Training &
@@ -146,9 +156,7 @@ security, or security engineering internships.
 \end{tabularx}
 \begin{resumeitems}
   \small
-  \item Completed a two-month, project-based web-development internship; applied
-    academic concepts to practical technical projects and strengthened structured
-    problem-solving.
+  \item Completed a two-month, project-based web-development internship, applying academic concepts to practical projects.
 \end{resumeitems}
 \vspace{-1pt}
 \begin{tabularx}{\linewidth}{@{}Xr@{}}
@@ -163,8 +171,7 @@ security, or security engineering internships.
 \end{resumeitems}
 \vspace{-1pt}
 \small
-\textbf{Smart India Hackathon 2025:} Advanced to Round 3 with a Smart Tourist
-Safety Monitoring solution in the Travel and Tourism track.
+\textbf{Smart India Hackathon 2025:} Reached Round 3 with a Smart Tourist Safety Monitoring solution (Travel and Tourism).
 
 \section{Technical Skills}
 \small
@@ -172,7 +179,7 @@ Safety Monitoring solution in the Travel and Tourism track.
 analysis, network traffic inspection, detection logic, alert triage, SOC
 workflows, log analysis, risk scoring, incident response, and IAM\\
 \textbf{Programming:} Python, JavaScript, Java, C++, C, SQL\\
-\textbf{Frameworks and Data:} FastAPI, React, Vite, Streamlit, Scapy, SQLAlchemy,
+\textbf{Frameworks and Data:} Node.js, FastAPI, React, Vite, Streamlit, Scapy, SQLAlchemy,
 SQLite, Pandas, Plotly, Pytest\\
 \textbf{Security and Cloud Tools:} iptables, Wireshark, Nmap, Burp Suite, Kali
 Linux, Docker, GitHub Actions, AWS IAM, EC2, DynamoDB\\
@@ -182,10 +189,8 @@ Linux, Docker, GitHub Actions, AWS IAM, EC2, DynamoDB\\
 \section{Selected Credentials}
 \small
 \begin{tabularx}{\linewidth}{@{}Xr@{}}
-  AWS Academy Graduate - Cloud Developing & 2026\\
-  AWS Academy Graduate - Cloud Foundations & 2026\\
-  Cisco Networking Academy - Introduction to Cybersecurity & 2026\\
-  IBM SkillsBuild - Getting Started with Cybersecurity & 2026\\
+  AWS Academy Graduate - Cloud Developing and Cloud Foundations & 2026\\
+  Cisco - Introduction to Cybersecurity; IBM SkillsBuild - Getting Started with Cybersecurity & 2026\\
   Forage - Cybersecurity simulations (PwC US, Datacom, Mastercard,
   Commonwealth Bank, and Tata) & 2026\\
   ISC2 Candidate status & May 2026 - May 2027
