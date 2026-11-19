@@ -78,122 +78,90 @@
 
 \section{Profile}
 \small
-B.Tech Computer Engineering student building tested firewall, phishing, network-monitoring, and SOC tools. Published four public security projects with CI and 89 automated tests. Seeking cybersecurity and security engineering internships.
+Computer Engineering student building explainable cybersecurity tools with Python, FastAPI, React, and SQL. Project work covers phishing detection, network monitoring, firewall auditing, secure APIs, and automated testing. Seeking cybersecurity, SOC analyst, or security engineering internships.
 
 \section{Education}
 \begin{tabularx}{\linewidth}{@{}Xr@{}}
-  \textbf{Amity University Punjab}, B.Tech Computer Engineering &
-  Sep 2024 - Sep 2028\\
-  \small Mohali, Punjab \textbar{} CGPA: 7.61/10 \textbar{} Latest SGPA: 8.33/10 &
+  \textbf{Amity University Punjab}, B.Tech Computer Engineering & Sep 2024 - Sep 2028\\
+  Mohali, Punjab \textbar{} \textbf{CGPA: 7.9/10} \textbar{} \textbf{Latest SGPA: 8.9/10} &
 \end{tabularx}
 \vspace{1pt}
 
-\small
 \textbf{Ryan International School} - Class XII, PCM: 80.4\% \hfill 2024\quad
-\textbar\quad
-\textbf{Vivek High School} - Class X: 94.2\% \hfill 2022
+\textbar\quad \textbf{Vivek High School} - Class X: 94.2\% \hfill 2022
 
-\section{Selected Projects}
-\projectheading
-  {FirewallGuard - Explainable Firewall Rules Auditor}
-  {https://github.com/darshnoor30/FirewallGuard}
-  {Python, iptables, Streamlit, ReportLab}
-\begin{resumeitems}
-  \small
-  \item Built a deterministic auditor for JSON and iptables-save inputs that
-    normalizes IPv4/IPv6 CIDRs, ports, interfaces, connection states, and
-    default policies before analysis.
-  \item Detects public administrative and database exposure, permissive
-    policies, duplicates, and conservative shadowing; delivers CLI gates,
-    dashboard exports, and PDF/JSON evidence with 44 tests and 91\% coverage.
-\end{resumeitems}
-
+\section{Selected Security Projects}
 \projectheading
   {SentinelScan - Phishing URL Detection Platform}
   {https://github.com/darshnoor30/SentinelScan}
   {Python, FastAPI, React, Random Forest}
 \begin{resumeitems}
-  \small
-  \item Built an end-to-end platform that combines 31 engineered URL and domain
-    features with SSL, DNS, WHOIS, reputation, and optional threat-intelligence
-    signals.
-  \item Implemented explainable risk fusion, three verdict classes, API-key
-    authentication, scan history, and dashboard analytics; the selected model
-    recorded 99.84\% accuracy on the project evaluation split, with real-world
-    limitations documented.
+  \item Built a full-stack URL analysis pipeline combining 31 engineered features with SSL/TLS, DNS, WHOIS, reputation, and optional threat-intelligence signals to explain risk assessments.
+  \item Implemented API-key authentication, scan history, risk-score explanations, and dashboard analytics; added CI and documented model limitations.
 \end{resumeitems}
 
 \projectheading
-  {SentinelNet - Network Detection and SOC Console}
-  {https://github.com/darshnoor30/SentinelNet}
-  {Python, Scapy, Streamlit, Plotly, Pandas}
+  {Vajra Sentinel - Network Detection and Response}
+  {https://github.com/darshnoor30/Vajra-Sentinel}
+  {Python, Suricata EVE, SQLite, nftables}
 \begin{resumeitems}
-  \small
-  \item Built a privacy-aware packet-metadata pipeline with typed service rules,
-    normalized CSV telemetry, and rolling detection for 10 unique destination
-    ports within 60 seconds.
-  \item Delivered an analyst-focused dashboard with severity and source filters,
-    priority-sorted alerts, timelines, auto-refresh, and CSV export; added Ruff,
-    Pytest, coverage gates, and a Python-version CI matrix.
+  \item Built telemetry normalization, stateful behavior rules, incident correlation, and an analyst dashboard; combined signature evidence with an optional model whose synthetic-data limitations are explicit.
+  \item Added dry-run response defaults, protected-network checks, expiring containment, and rollback; verified the pipeline with 38 automated tests and 90.40\% coverage.
 \end{resumeitems}
 
 \projectheading
-  {StreamFlix - Cinema Discovery Demo}
-  {https://github.com/darshnoor30/StreamFlix}
-  {JavaScript, Node.js, SQLite, Docker}
+  {FirewallGuard - Explainable Firewall Rules Auditor}
+  {https://github.com/darshnoor30/FirewallGuard}
+  {Python, iptables, Streamlit, ReportLab}
 \begin{resumeitems}
-  \small
-  \item Built a responsive catalog with search, genre filters, saved lists, and
-    demo watch-progress persistence in SQLite using private browser sessions.
-  \item Added prepared SQL statements, input validation, HttpOnly cookies, CSP,
-    rate limiting, and API regression tests passing in GitHub Actions; added
-    non-root Docker packaging. Private repository; playback is simulated.
+  \item Normalized JSON and iptables-save policies across IPv4/IPv6, ports, interfaces, and connection states to detect exposure, permissive rules, duplicates, and conservative shadowing.
+  \item Delivered evidence-backed CLI, dashboard, and PDF/JSON/CSV reports; verified audit and report engines with 44 automated tests and 91\% line coverage.
 \end{resumeitems}
+
+\small
+\textbf{Additional work:}
+\href{https://github.com/darshnoor30/AegisScan}{AegisScan (exposure discovery)}
+\textbar{} \href{https://github.com/darshnoor30/SentinelNet}{SentinelNet (SOC console)}
+\textbar{} \href{https://github.com/darshnoor30/StreamFlix}{StreamFlix (private demo)}
+
 \section{Experience and Leadership}
 \begin{tabularx}{\linewidth}{@{}Xr@{}}
-  \textbf{Web Development Intern}, 3Skill Training &
-  2 months, 2026\\
+  \textbf{Web Development Intern}, 3Skill Training & Jun - Aug 2026\\
 \end{tabularx}
 \begin{resumeitems}
-  \small
-  \item Completed a two-month, project-based web-development internship, applying academic concepts to practical projects.
+  \item Built a personal portfolio and the StreamFlix streaming-interface project with HTML and CSS during a two-month internship; subsequently extended StreamFlix with JavaScript, a Node.js API, and SQLite persistence.
 \end{resumeitems}
 \vspace{-1pt}
 \begin{tabularx}{\linewidth}{@{}Xr@{}}
-  \textbf{Home Tutor}, Self-Employed - Mohali and Chandigarh &
-  Jun 2024 - Present\\
+  \textbf{Cyber Security Intern}, Labmentix Pvt. Ltd. & 15 May - 15 Jul 2026\\
 \end{tabularx}
 \begin{resumeitems}
-  \small
-  \item Teach 10+ CBSE and ICSE students across Mathematics, Science, English,
-    and Computer Science; create structured learning plans and explain complex
-    concepts clearly.
+  \item Completed a two-month cybersecurity internship involving multiple project assignments.
 \end{resumeitems}
 \vspace{-1pt}
-\small
-\textbf{Smart India Hackathon 2025:} Reached Round 3 with a Smart Tourist Safety Monitoring solution (Travel and Tourism).
+\begin{tabularx}{\linewidth}{@{}Xr@{}}
+  \textbf{Home Tutor}, Self-Employed - Mohali and Chandigarh & Jun 2024 - Present\\
+\end{tabularx}
+\begin{resumeitems}
+  \item Teach 10+ CBSE/ICSE students in Mathematics, Science, English, and Computer Science; build structured learning plans and explain complex concepts clearly.
+\end{resumeitems}
+\vspace{-1pt}
+\textbf{Smart India Hackathon 2025:} Reached Round 2 with a Smart Tourist Safety Monitoring solution (Travel and Tourism).
 
 \section{Technical Skills}
 \small
-\textbf{Security:} Firewall policy auditing, least-privilege analysis, phishing
-analysis, network traffic inspection, detection logic, alert triage, SOC
-workflows, log analysis, risk scoring, incident response, and IAM\\
-\textbf{Programming:} Python, JavaScript, Java, C++, C, SQL\\
-\textbf{Frameworks and Data:} Node.js, FastAPI, React, Vite, Streamlit, Scapy, SQLAlchemy,
-SQLite, Pandas, Plotly, Pytest\\
-\textbf{Security and Cloud Tools:} iptables, Wireshark, Nmap, Burp Suite, Kali
-Linux, Docker, GitHub Actions, AWS IAM, EC2, DynamoDB\\
-\textbf{Languages:} English (fluent); Hindi and Punjabi (native/bilingual); German
-(elementary)
+\textbf{Security:} Phishing analysis, network traffic analysis, firewall policy auditing, detection logic, alert triage, SOC workflows, risk scoring, identity and access management (IAM)\\
+\textbf{Programming and Data:} Python, JavaScript, TypeScript, SQL, Java, SQLite, PostgreSQL, Pandas\\
+\textbf{Frameworks and Tools:} FastAPI, React, Node.js, Streamlit, Scapy, Suricata, iptables, nftables, Wireshark, Nmap, Burp Suite, Linux, Docker, GitHub Actions, Pytest, Ruff, AWS IAM and EC2\\
+\textbf{Languages:} English, Hindi, Punjabi; elementary German
 
 \section{Selected Credentials}
 \small
 \begin{tabularx}{\linewidth}{@{}Xr@{}}
-  AWS Academy Graduate - Cloud Developing and Cloud Foundations & 2026\\
-  Cisco - Introduction to Cybersecurity; IBM SkillsBuild - Getting Started with Cybersecurity & 2026\\
-  Forage - Cybersecurity simulations (PwC US, Datacom, Mastercard,
-  Commonwealth Bank, and Tata) & 2026\\
-  ISC2 Candidate status & May 2026 - May 2027
+  AWS Academy Graduate - Cloud Developing and Cloud Foundations (training badges) & 2026\\
+  Cisco Networking Academy - Introduction to Cybersecurity & 2026\\
+  IBM SkillsBuild - Getting Started with Cybersecurity & 2026\\
+  Forage - Cybersecurity job simulations: Datacom, Mastercard, Commonwealth Bank, Tata & 2026\\
+  \multicolumn{2}{@{}l@{}}{Simulation exercises: Splunk analysis, incident response, IAM strategy, and phishing awareness.}
 \end{tabularx}
-
 \end{document}
